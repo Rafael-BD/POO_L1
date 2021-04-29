@@ -50,3 +50,4 @@ Também Utilizamos o Thymeleaf para as camadas de visualização.
 -  *(<a href="https://github.com/camilaffpacheco" target="__blank">Camila Pacheco</a>)*
 -  *(<a href="https://github.com/VGabrielMelo" target="__blank">Victor Gabriel Melo</a>)*
 -  *(<a href="https://github.com/CristianMateusTB" target="__blank">Cristian Mateus Teixeira Barbosa</a>)*
+-  *(<a href="https://github.com/Rafael-BD" target="__blank">Rafael Bettini Dias</a>)*
