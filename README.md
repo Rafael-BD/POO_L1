@@ -46,7 +46,7 @@ Também Utilizamos o Thymeleaf para as camadas de visualização.
 
 ### **DevTeam:**
 
--  *(<a href="https://github.com/brennorichard" target="__blank">Brenno Richard Rabelo de Almeida</a>*
+-  *(<a href="https://github.com/brennorichard" target="__blank">Brenno Richard Rabelo de Almeida</a>)*
 -  *(<a href="https://github.com/camilaffpacheco" target="__blank">Camila Pacheco</a>)*
 -  *(<a href="https://github.com/VGabrielMelo" target="__blank">Victor Gabriel Melo</a>)*
 -  *(<a href="https://github.com/CristianMateusTB" target="__blank">Cristian Mateus Teixeira Barbosa</a>)*
