@@ -3,18 +3,46 @@
 
  O objetivo do projeto era realizar um loja de cosméticos no ramo da estética online, realizando assim uma aplicação web.
 
+
 ### :man_technologist: Tecnologias Usadas:
-Utilizamos O java Spring Boot em conjunto com algumas tecnologias de Front-end como HTML e CSS.
+Utilizamos o java Spring Boot em conjunto com algumas tecnologias de Front-end como HTML, CSS e JavaScript.
+Também Utilizamos o Thymeleaf para as camadas de visualização.
+
 
 ### :pushpin: Wareframes 
 
 #### Adiministrador
+
+#####Cadastro de Clientes
+
 ![Administrador](https://github.com/DevSlim001/POO_L1/blob/main/Wareframe.jpeg)
+
+#####Update de clientes
+
+![Update de clientes](https://github.com/DevSlim001/POO_L1/blob/main/Update_cadastro.jpeg)
+
+#####Cadastro realizado pelo Administrador
+
+![Cadastro Realizado](https://github.com/DevSlim001/POO_L1/blob/main/Cadastro_realizado.jpeg)
+
+#####Cadastro de Serviços
+
+![Cadastro de serviços](https://github.com/DevSlim001/POO_L1/blob/main/Cadastro_Servi%C3%A7o.jpeg)
+
+#####Serviços Cadastrados
+
+![Serviços Cadastrados](https://github.com/DevSlim001/POO_L1/blob/main/Servi%C3%A7os.jpeg)
+
+---------------------------------------------------------------------------------------------------------------
 
 
 ### :pushpin: Diagrama de classes
 
 ![Diagrama](https://github.com/DevSlim001/POO_L1/blob/main/wb-poo-diagrama.png)
+
+
+---------------------------------------------------------------------------------------------------------------
+
 
 ### **DevTeam:**
 
