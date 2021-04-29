@@ -6,13 +6,13 @@
 
 ### :man_technologist: Tecnologias Usadas:
 Utilizamos o java Spring Boot em conjunto com algumas tecnologias de Front-end como HTML, CSS e JavaScript.
-Também Utilizamos o Thymeleaf para as camadas de visualização.
+Também Utilizamos o Thymeleaf para as camadas de visualização. 
 
 
 ### :pushpin: Wareframes 
 
 #### Adiministrador
-
+ 
 #####Cadastro de Clientes
 
 ![Administrador](https://github.com/DevSlim001/POO_L1/blob/main/Wareframe.jpeg)
