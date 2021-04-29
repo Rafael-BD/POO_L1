@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+<title>World Beauty</title>
+
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="bootstrap/js//bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img style="margin-left: 20px;" src="img/WB.jpg" alt="" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                World Beauty
+            </a>
+            <div style="margin-right: 20px;" >
+                <a class="btn btn-outline-light" href="/"><strong>Cadastro</strong></a>
+                <a class="btn btn-outline-light" href="/verClientes"><strong>Listagem</strong></a>
+                <a class="btn btn-outline-light" href="/servicos"><strong>Serviços</strong></a>
+                <a class="btn btn-outline-light" href="/relatorios"><strong>Relátorios</strong></a>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<div class="container" style="height: 410px; margin-top: 130px;">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Nascimento</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Usuário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="cliente: ${clientes}">
+            <th scope="row">
+            	<a style="color: black;" th:href="@{/{id}(id = ${cliente.id})}"><span th:text="${cliente.nome}"></span></a>
+            </th>
+            <td><span th:text="${cliente.dtnasc}"></td>
+            <td><span th:text="${cliente.tel}"></td>
+            <td><span th:text="${cliente.login}"></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgb(0, 0, 0, 0.95);">
+        <a style="color: white;">© 2021 Copyright: World Beauty</a>
+    </div>
+</footer>
+
+</html>

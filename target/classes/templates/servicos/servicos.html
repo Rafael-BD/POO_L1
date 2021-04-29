@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+<title>World Beauty</title>
+
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="bootstrap/js//bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img style="margin-left: 20px;" src="img/WB.jpg" alt="" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                World Beauty
+            </a>
+            <div style="margin-right: 20px;" >
+                <a class="btn btn-outline-light" href="/"><strong>Cadastro</strong></a>
+                <a class="btn btn-outline-light" href="/verClientes"><strong>Listagem</strong></a>
+                <a class="btn btn-outline-light" href="/servicos"><strong>Serviços</strong></a>
+                <a class="btn btn-outline-light" href="/relatorios"><strong>Relátorios</strong></a>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<div class="container" style="height: 410px; margin-top: 130px;">
+	<h3 style="text-align: center;">Serviços</h3>
+	<br>
+  		<div class="row">
+    		<div class="col-4">
+			    <table class="table" style="width: 250px;">
+			        <thead class="thead-dark">
+			          <tr>
+			            <th scope="col">Lista de Serviços</th>
+			          </tr>
+			        </thead>
+			        <tbody>
+			          <tr th:each="servico: ${verServicos}">
+			            <th scope="row">
+			            	<a style="color: black;"><span th:text="${servico.nome}"></span></a>
+			            </th>   
+			          </tr>
+			        </tbody>
+			      </table>
+			 </div>
+			 <div class="col-5">
+			 	<form method="post" action="/cadastroServicos">
+			 	   <strong for="formGroupExampleInput" class="form-label">Novo Serviço</strong>
+                 	<input type="text" class="form-control" style="width: 350px;" placeholder="Insira o nome do serviço" name="nome">
+                 	<br>
+                 	<button type="submit" class="btn btn-dark" style="width: 200px;">Cadastrar</button>
+			 	</form>
+			</div>
+			<div class="col-3">
+			<br>
+				<a class="btn btn-dark" style="width: 200px;" href="/servicoUsado">Cadastrar Serviço Usado</a>
+			</div>
+	</div>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgb(0, 0, 0, 0.95);">
+        <a style="color: white;">© 2021 Copyright: World Beauty</a>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+<title>World Beauty</title>
+
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img style="margin-left: 20px;" src="img/WB.jpg" alt="" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                World Beauty
+            </a>
+            <div style="margin-right: 20px;" >
+                <a class="btn btn-outline-light" href="/"><strong>Cadastro</strong></a>
+                <a class="btn btn-outline-light" href="/verClientes"><strong>Listagem</strong></a>
+                <a class="btn btn-outline-light" href="/servicos"><strong>Serviços</strong></a>
+                <a class="btn btn-outline-light" href="/relatorios"><strong>Relátorios</strong></a>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<div class="container" style="height: 410px; margin-top: 130px;">
+    <h3 style="text-align: center;">Cadastro de Serviço Usado</h3>
+    <form method="post">
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3" style="margin-top: 50px;">
+                    <strong for="formGroupExampleInput" class="form-label">Nome do Serviço</strong>
+                    <input type="text" class="form-control" style="width: 350px;" placeholder="Insira o nome do serviço" name="nome">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3" style="margin-top: 50px;">
+                    <strong for="formGroupExampleInput" class="form-label">Data do Serviço</strong>
+                    <input type="date" class="form-control" style="width: 250px;" placeholder="Insira o data" name="data">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3" style="margin-top: 51px;">
+                    <strong for="formGroupExampleInput" class="form-label">Usuário do Cliente</strong>
+                    <input type="text" class="form-control" style="width: 250px;" placeholder="Insira o usuário" name="usercli">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="mb-3" style="margin-top: 74px;">
+                    <button type="submit" class="btn btn-dark" style="width: 200px;">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgb(0, 0, 0, 0.95);">
+        <a style="color: white;">© 2021 Copyright: World Beauty</a>
+    </div>
+</footer>
+
+</html>

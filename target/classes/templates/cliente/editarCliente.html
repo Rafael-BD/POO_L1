@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<meta charset="UTF-8">
+<title>World Beauty</title>
+
+<head>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="bootstrap/js//bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img style="margin-left: 20px;" src="img/WB.jpg" alt="" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                World Beauty
+            </a>
+            <div style="margin-right: 20px;">
+       			<a class="btn btn-outline-light" href="/"><strong>Cadastro</strong></a>
+                <a class="btn btn-outline-light" href="/verClientes"><strong>Listagem</strong></a>
+                <a class="btn btn-outline-light" href="/servicos"><strong>Serviços</strong></a>
+                <a class="btn btn-outline-light" href="/relatorios"><strong>Relátorios</strong></a>
+            </div>
+        </div>
+    </nav>
+</head>
+
+
+
+<div class="container" style="height: 410px; margin-top: 130px;">
+    <h3 style="text-align: center;">Edição de Clientes</h3>
+    <form action="/editarCliente" th:object="${cliente}" method="POST">
+    <input type="hidden" th:field="*{id}">
+    <input type="hidden" th:field="*{senha}">
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3" style="margin-top: 50px;">
+                    <strong for="formGroupExampleInput" class="form-label">Nome</strong>
+                    <input type="text" class="form-control" style="width: 350px;" th:field="*{nome}">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3" style="margin-top: 50px;">
+                    <strong for="formGroupExampleInput" class="form-label">Gênero</strong>
+                    <input type="text" class="form-control" style="width: 250px;" th:field="*{genero}">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="mb-3" style="margin-top: 51px;">
+                    <strong for="formGroupExampleInput" class="form-label">Data de Nascimento</strong>
+                    <input type="date" class="form-control" style="width: 250px;" th:field="*{dtnasc}">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="mb-3" style="margin-top: 51px;">
+                    <strong for="formGroupExampleInput" class="form-label">Telefone</strong>
+                    <input type="text" class="form-control" style="width: 200px;" th:field="*{tel}">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <strong for="formGroupExampleInput2" class="form-label">Usuário</strong>
+                    <input type="text" class="form-control" style="width: 350px;" th:field="*{login}">
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="mb-3" style="margin-top: 23px;">
+                    <button type="submit" class="btn btn-success" style="width: 95px;"
+                    	th:href="@{/editarCliente/{id}(id = ${cliente.id})}">Editar</button>
+                </div>
+            </div>
+            <div class="col-1" style="margin-left: 10px;">
+                <div class="mb-3" style="margin-top: 23px;">
+                    <a type="submit" class="btn btn-danger" style="width: 95px;"
+                    	th:href="@{/deletarCliente(id = ${cliente.id})}">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgb(0, 0, 0, 0.95);">
+        <a style="color: white;">© 2021 Copyright: World Beauty</a>
+    </div>
+</footer>
+
+</html>
